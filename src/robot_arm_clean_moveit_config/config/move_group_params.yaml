@@ -1,0 +1,35 @@
+/**:
+  ros__parameters:
+    planning_pipelines: ["ompl"]
+    default_planning_pipeline: "ompl"
+    ompl.planning_plugin: "ompl_interface/OMPLPlanner"
+    ompl.start_state_max_bounds_error: 0.1
+    ompl.planner_configs.RRTConnectkConfigDefault.type: "geometric::RRTConnect"
+    ompl.planner_configs.RRTConnectkConfigDefault.range: 0.0
+    ompl.arm.planner_configs: ["RRTConnectkConfigDefault"]
+    ompl.arm.projection_evaluator: "joints(joint1,joint2)"
+    ompl.arm.longest_valid_segment_fraction: 0.005
+
+/move_group:
+  ros__parameters:
+    planning_pipelines: ["ompl"]
+    default_planning_pipeline: "ompl"
+    ompl.planning_plugin: "ompl_interface/OMPLPlanner"
+    ompl.start_state_max_bounds_error: 0.1
+    ompl.planner_configs.RRTConnectkConfigDefault.type: "geometric::RRTConnect"
+    ompl.planner_configs.RRTConnectkConfigDefault.range: 0.0
+    ompl.arm.planner_configs: ["RRTConnectkConfigDefault"]
+    ompl.arm.projection_evaluator: "joints(joint1,joint2)"
+    ompl.arm.longest_valid_segment_fraction: 0.005
+
+/move_group/moveit:
+  ros__parameters:
+    planning_pipelines: ["ompl"]
+    default_planning_pipeline: "ompl"
+    ompl.planning_plugin: "ompl_interface/OMPLPlanner"
+    ompl.start_state_max_bounds_error: 0.1
+    ompl.planner_configs.RRTConnectkConfigDefault.type: "geometric::RRTConnect"
+    ompl.planner_configs.RRTConnectkConfigDefault.range: 0.0
+    ompl.arm.planner_configs: ["RRTConnectkConfigDefault"]
+    ompl.arm.projection_evaluator: "joints(joint1,joint2)"
+    ompl.arm.longest_valid_segment_fraction: 0.005
